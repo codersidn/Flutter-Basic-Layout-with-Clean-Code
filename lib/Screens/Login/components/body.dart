@@ -59,7 +59,7 @@ class Body extends StatelessWidget {
             RoundedGradientButton(
               gradient: kButtonGradientColor,
               press: () {
-                Get.to(MainWidgets());
+                Get.off(MainWidgets());
               },
               text: "Login",
               textColor: kTextColor,
