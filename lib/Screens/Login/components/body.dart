@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loginregister/Screens/Login/components/background.dart';
+import 'package:loginregister/Screens/Presentation/main_widgets.dart';
 import 'package:loginregister/components/constants.dart';
 import 'package:loginregister/components/or_divider.dart';
 import 'package:loginregister/components/rounded_button.dart';
@@ -56,7 +58,9 @@ class Body extends StatelessWidget {
             ),
             RoundedGradientButton(
               gradient: kButtonGradientColor,
-              press: () {},
+              press: () {
+                Get.to(MainWidgets());
+              },
               text: "Login",
               textColor: kTextColor,
             ),
